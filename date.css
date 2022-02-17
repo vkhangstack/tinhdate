@@ -44,9 +44,10 @@ body {
   font-size: 28px;
 }
 footer {
-  right: 4%;
+  left: 6%;
   bottom: 15px;
   position: absolute;
+  font-size: 14px;
 }
 footer span {
   font-weight: 700;

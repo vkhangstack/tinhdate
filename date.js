@@ -11,7 +11,7 @@ function calDate() {
   let kqDaysTotal = kqTimeTotal / (1000 * 3600 * 24);
   let kqTimeNow = date_hsd.getTime() - date_result.getTime();
   let kqDaysNow = kqTimeNow / (1000 * 3600 * 24);
-  let results = parseFloat((kqDaysNow / kqDaysTotal) * 100).toFixed(2);
+  let results = parseFloat((kqDaysNow / (kqDaysTotal + 1)) * 100).toFixed(2);
 
   document.getElementById("dayCount").innerHTML = results + "%";
 
