@@ -1,0 +1,53 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+.container {
+  padding-top: 10px;
+  background-color: white;
+  text-align: center;
+  /* min-height: 680px; */
+}
+.title {
+  color: rgb(208, 211, 32);
+  font-weight: bold;
+  font-size: 24px;
+}
+/* .date-input {
+      text-align: center;
+      margin: 0 auto;
+      
+} */
+.date-input input {
+  height: 25px;
+  text-align: center;
+  top: 5px;
+}
+.date-input p {
+  font-size: 18px;
+  color: red;
+  vertical-align: bottom;
+  margin: 20px 0 5px 0 !important;
+}
+.date-output {
+  text-align: center;
+  padding-top: 20px;
+}
+.calculator-button {
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(198, 252, 5);
+  height: 40px;
+  width: 120px;
+}
+.show {
+  padding-top: 20px;
+  font-size: 28px;
+}
+footer {
+  right: 4%;
+  bottom: 15px;
+  position: absolute;
+}
+footer span {
+  font-weight: 700;
+}
