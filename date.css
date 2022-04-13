@@ -62,7 +62,7 @@ body {
   color: rgb(26, 14, 201);
 }
 footer {
-  left: 14%;
+  margin: 16%;
   bottom: 15px;
   position: absolute;
   font-size: 14px;
