@@ -13,10 +13,15 @@
 <body>
       <div class="container">
             <div class="title">Tính % date còn lại của sản phẩm</div>
+
             <div class="date-input">
                   <div>
                         <p>NSX</p>
-                        <input type="date" id="nsx">
+                        <input type="number" class="input-nsx" id="nsx-number">
+                        <select name="nsx" id="nsx-option">
+                              <option value="day">Ngày</option>
+                              <option value="month">Tháng</option>
+                        </select>
                   </div>
                   <div>
                         <p>HSD</p>
@@ -24,11 +29,11 @@
                   </div>
                   <div>
                         <p> Ngày kiểm tra Date</p>
-                        <input type="date" id="result">
+                        <input type="date" id="result" value="17/02/2022">
                   </div>
             </div>
             <div class="date-output">
-                  <button type="button" onclick="calDate()" class="calculator-button">Kết Quả</button>
+                  <button type="button" onclick="calDateNsx()" class="calculator-button">Kết Quả</button>
             </div>
             <div class="show">
                   <p id="dayCount" value=""></p>
@@ -37,7 +42,7 @@
       <div class="menu">
             <a href="/findhsd.html">Đã biết NSX</a>
 
-            <a href="/findnsx.html">Đã biết HSD</a>
+            <a href="/index.html">Về Trang Chủ</a>
       </div>
       <footer>Sản phẩm phát triển bởi <span> Phạm Văn Khang</span>
             &emsp;

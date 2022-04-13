@@ -22,6 +22,15 @@ body {
   text-align: center;
   top: 5px;
 }
+.date-input select {
+  height: 30px;
+}
+.input-hsd {
+  width: 55px;
+}
+.input-nsx {
+  width: 55px;
+}
 .date-input p {
   font-size: 18px;
   color: red;
@@ -42,6 +51,15 @@ body {
 .show {
   padding-top: 20px;
   font-size: 28px;
+}
+.menu {
+  padding-top: 20px;
+  text-align: center;
+}
+.menu a {
+  text-decoration: none;
+  margin: 40px;
+  color: rgb(26, 14, 201);
 }
 footer {
   left: 6%;

@@ -13,6 +13,7 @@
 <body>
       <div class="container">
             <div class="title">Tính % date còn lại của sản phẩm</div>
+
             <div class="date-input">
                   <div>
                         <p>NSX</p>
@@ -20,22 +21,26 @@
                   </div>
                   <div>
                         <p>HSD</p>
-                        <input type="date" id="hsd">
+                        <input type="number" class="input-hsd" id="hsd-number">
+                        <select name="hsd" id="hsd-option">
+                              <option value="day">Ngày</option>
+                              <option value="month">Tháng</option>
+                        </select>
                   </div>
                   <div>
                         <p> Ngày kiểm tra Date</p>
-                        <input type="date" id="result">
+                        <input type="date" id="result" value="17/02/2022">
                   </div>
             </div>
             <div class="date-output">
-                  <button type="button" onclick="calDate()" class="calculator-button">Kết Quả</button>
+                  <button type="button" onclick="calDateHsd()" class="calculator-button">Kết Quả</button>
             </div>
             <div class="show">
                   <p id="dayCount" value=""></p>
             </div>
       </div>
       <div class="menu">
-            <a href="/findhsd.html">Đã biết NSX</a>
+            <a href="/index.html">Về Trang Chủ</a>
 
             <a href="/findnsx.html">Đã biết HSD</a>
       </div>
