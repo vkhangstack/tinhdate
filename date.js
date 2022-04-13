@@ -61,6 +61,36 @@ function calDateNsx() {
 
     document.getElementById("dayCount").innerHTML = results + "%";
     colorResult(results);
+  } else if (getValueOption === "week") {
+    let nsx = getValueNumber;
+    let hsd = document.getElementById("hsd").value;
+    let result = document.getElementById("result").value;
+
+    let date_hsd = new Date(hsd);
+    let date_result = new Date(result);
+
+    let kqDaysTotal = nsx * 7;
+    let kqTimeNow = date_hsd.getTime() - date_result.getTime();
+    let kqDaysNow = kqTimeNow / (1000 * 3600 * 24);
+    let results = parseFloat((kqDaysNow / kqDaysTotal) * 100).toFixed(2);
+
+    document.getElementById("dayCount").innerHTML = results + "%";
+    colorResult(results);
+  } else if (getValueOption === "year") {
+    let nsx = getValueNumber;
+    let hsd = document.getElementById("hsd").value;
+    let result = document.getElementById("result").value;
+
+    let date_hsd = new Date(hsd);
+    let date_result = new Date(result);
+
+    let kqDaysTotal = nsx * 365;
+    let kqTimeNow = date_hsd.getTime() - date_result.getTime();
+    let kqDaysNow = kqTimeNow / (1000 * 3600 * 24);
+    let results = parseFloat((kqDaysNow / kqDaysTotal) * 100).toFixed(2);
+
+    document.getElementById("dayCount").innerHTML = results + "%";
+    colorResult(results);
   }
 }
 
@@ -94,6 +124,38 @@ function calDateHsd() {
     let date_result = new Date(result);
 
     let kqDaysTotal = hsd;
+    let kqTimeBeforeNow = date_result.getTime() - date_nsx.getTime();
+    let kqTimeNow = kqTimeBeforeNow / (1000 * 3600 * 24);
+    let kqDaysNow = kqDaysTotal - kqTimeNow - 1;
+    let results = parseFloat((kqDaysNow / kqDaysTotal) * 100).toFixed(2);
+
+    document.getElementById("dayCount").innerHTML = results + "%";
+    colorResult(results);
+  } else if (getValueOption === "week") {
+    let nsx = document.getElementById("nsx").value;
+    let hsd = getValueNumber;
+    let result = document.getElementById("result").value;
+
+    let date_nsx = new Date(nsx);
+    let date_result = new Date(result);
+
+    let kqDaysTotal = hsd * 7;
+    let kqTimeBeforeNow = date_result.getTime() - date_nsx.getTime();
+    let kqTimeNow = kqTimeBeforeNow / (1000 * 3600 * 24);
+    let kqDaysNow = kqDaysTotal - kqTimeNow - 1;
+    let results = parseFloat((kqDaysNow / kqDaysTotal) * 100).toFixed(2);
+
+    document.getElementById("dayCount").innerHTML = results + "%";
+    colorResult(results);
+  } else if (getValueOption === "year") {
+    let nsx = document.getElementById("nsx").value;
+    let hsd = getValueNumber;
+    let result = document.getElementById("result").value;
+
+    let date_nsx = new Date(nsx);
+    let date_result = new Date(result);
+
+    let kqDaysTotal = hsd * 365;
     let kqTimeBeforeNow = date_result.getTime() - date_nsx.getTime();
     let kqTimeNow = kqTimeBeforeNow / (1000 * 3600 * 24);
     let kqDaysNow = kqDaysTotal - kqTimeNow - 1;
