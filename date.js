@@ -1,12 +1,17 @@
 function colorResult(color) {
   if (color > 65) {
     document.getElementById("dayCount").style.color = "green";
-  } else if (color <= 65 && color >= 50) {
+  } else if (color <= 65 && color > 50) {
     document.getElementById("dayCount").style.color = "orange";
-  } else {
+  } else if (color <= 50) {
     document.getElementById("dayCount").style.color = "red";
     document.getElementById("textFunny").innerHTML =
       "Vui lòng thận trọng. Có thể bạn sẽ nhận được biên bản sự việc khi tiếp nhận sản phẩm này!!!";
+    document.getElementById("textFunny").style.color = "red";
+  } else {
+    document.getElementById("dayCount").style.color = "red";
+    document.getElementById("textFunny").innerHTML =
+      "Lỗi rồi kìa. Xem lại NSX, HSD đã nhập chưa nè";
     document.getElementById("textFunny").style.color = "red";
   }
 }
