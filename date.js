@@ -5,6 +5,9 @@ function colorResult(color) {
     document.getElementById("dayCount").style.color = "orange";
   } else {
     document.getElementById("dayCount").style.color = "red";
+    document.getElementById("textFunny").innerHTML =
+      "Vui lòng thận trọng. Có thể bạn sẽ nhận được biên bản sự việc khi tiếp nhận sản phẩm này!!!";
+    document.getElementById("textFunny").style.color = "red";
   }
 }
 function calDate() {

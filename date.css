@@ -8,7 +8,7 @@ body {
   /* min-height: 680px; */
 }
 .title {
-  color: rgb(208, 211, 32);
+  color: #4d77ff;
   font-weight: bold;
   font-size: 24px;
 }
@@ -33,7 +33,7 @@ body {
 }
 .date-input p {
   font-size: 18px;
-  color: red;
+  color: #56bbf1;
   vertical-align: bottom;
   margin: 20px 0 5px 0 !important;
 }
@@ -44,9 +44,12 @@ body {
 .calculator-button {
   text-align: center;
   margin: 0 auto;
-  background-color: rgb(198, 252, 5);
+  background-color: #f2fa5a;
   height: 40px;
   width: 120px;
+  color: #4d77ff;
+  font-size: 14px;
+  border-color: #f2fa5a;
 }
 .show {
   padding-top: 20px;
@@ -59,7 +62,7 @@ body {
 .menu a {
   text-decoration: none;
   margin: 40px;
-  color: rgb(26, 14, 201);
+  color: #5ee6eb;
 }
 footer {
   left: 16%;
@@ -70,6 +73,11 @@ footer {
 footer span {
   font-weight: 700;
 }
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
 @media only screen and (max-width: 600px) {
   footer {
     font-size: 12px;
