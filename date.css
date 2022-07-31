@@ -10,9 +10,25 @@ body {
 .notification {
   text-align: center;
   justify-self: center;
-  padding-top: 70%;
+  padding-top: 20%;
   margin: 0 auto;
 }
 .notification a {
   color: rgb(22, 16, 140);
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-top: 10px;
+    text-align: center;
+    /* min-height: 680px; */
+  }
+  .notification {
+    text-align: center;
+    justify-self: center;
+    padding-top: 70%;
+    margin: 0 auto;
+  }
+  .notification a {
+    color: rgb(22, 16, 140);
+  }
 }
