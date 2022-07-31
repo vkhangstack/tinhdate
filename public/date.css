@@ -41,6 +41,10 @@ body {
   text-align: center;
   padding-top: 20px;
 }
+.date-output button {
+  font-size: 18px;
+  font-weight: 600;
+}
 .calculator-button {
   text-align: center;
   margin: 0 auto;
@@ -62,10 +66,15 @@ body {
 .menu a {
   text-decoration: none;
   margin: 40px;
-  color: #9900f0;
+  color: #4809a7;
+  font-size: 18px;
+}
+.donate img {
+  height: 150px !important;
+  width: 150px !important;
 }
 footer {
-  left: 16%;
+  left: 28%;
   bottom: 15px;
   position: absolute;
   font-size: 14px;
@@ -75,12 +84,15 @@ footer span {
 }
 footer a {
   text-decoration: none;
-  color: #000;
+  color: rgb(12, 137, 226);
+}
+footer h2 {
+  color: #f76707;
 }
 
 @media only screen and (max-width: 600px) {
   footer {
-    font-size: 12px;
+    font-size: 14px;
   }
   footer span {
     font-weight: 600;

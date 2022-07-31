@@ -6,7 +6,7 @@ function colorResult(color) {
   } else if (color <= 50) {
     document.getElementById("dayCount").style.color = "red";
     document.getElementById("textFunny").innerHTML =
-      "Vui lòng thận trọng. Có thể bạn sẽ nhận được biên bản sự việc khi tiếp nhận sản phẩm này!!!";
+      "Sản phẩm dường như không đạt quy định chất lượng!";
     document.getElementById("textFunny").style.color = "red";
   } else {
     document.getElementById("dayCount").style.color = "red";

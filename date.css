@@ -1,88 +1,18 @@
 body {
   font-family: "Times New Roman", Times, serif;
+  background-color: rgb(99, 234, 234);
 }
 .container {
   padding-top: 10px;
-  background-color: white;
   text-align: center;
   /* min-height: 680px; */
 }
-.title {
-  color: #4d77ff;
-  font-weight: bold;
-  font-size: 24px;
-}
-/* .date-input {
-      text-align: center;
-      margin: 0 auto;
-      
-} */
-.date-input input {
-  height: 25px;
+.notification {
   text-align: center;
-  top: 5px;
-}
-.date-input select {
-  height: 30px;
-}
-.input-hsd {
-  width: 55px;
-}
-.input-nsx {
-  width: 55px;
-}
-.date-input p {
-  font-size: 18px;
-  color: #56bbf1;
-  vertical-align: bottom;
-  margin: 20px 0 5px 0 !important;
-}
-.date-output {
-  text-align: center;
-  padding-top: 20px;
-}
-.calculator-button {
-  text-align: center;
+  justify-self: center;
+  padding-top: 70%;
   margin: 0 auto;
-  background-color: #f2fa5a;
-  height: 40px;
-  width: 120px;
-  color: #4700d8;
-  font-size: 14px;
-  border-color: #f2fa5a;
 }
-.show {
-  padding-top: 20px;
-  font-size: 28px;
-}
-.menu {
-  padding-top: 20px;
-  text-align: center;
-}
-.menu a {
-  text-decoration: none;
-  margin: 40px;
-  color: #9900f0;
-}
-footer {
-  left: 16%;
-  bottom: 15px;
-  position: absolute;
-  font-size: 14px;
-}
-footer span {
-  font-weight: 700;
-}
-footer a {
-  text-decoration: none;
-  color: #000;
-}
-
-@media only screen and (max-width: 600px) {
-  footer {
-    font-size: 12px;
-  }
-  footer span {
-    font-weight: 600;
-  }
+.notification a {
+  color: rgb(22, 16, 140);
 }
