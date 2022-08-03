@@ -69,10 +69,10 @@ body {
   color: #4809a7;
   font-size: 18px;
 }
-/* .donate img {
+.donate img {
   height: 150px !important;
   width: 150px !important;
-} */
+}
 /* footer {
   left: 28%;
   bottom: 15px;
@@ -86,9 +86,9 @@ footer a {
   text-decoration: none;
   color: rgb(12, 137, 226);
 }
-/* footer h2 {
+footer h2 {
   color: #f76707;
-} */
+}
 
 @media only screen and (max-width: 600px) {
   footer {
