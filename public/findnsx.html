@@ -1,69 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="calculator.png" type="image/x-icon" />
-    <title>Date Calculator</title>
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9482225797216078"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./date.css" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="calculator.png" type="image/x-icon" />
+  <title>Date Calculator</title>
+  <script async src="https://umami.phamvankhang.name.vn/script.js"
+    data-website-id="a4bb13f0-7a8c-4ea5-b6e6-32dbfca9d8b4"></script>
+  <link rel="stylesheet" href="./date.css" />
+</head>
 
 <body>
-    <div class="container">
-      <div class="title">Tính % date còn lại của sản phẩm</div>
+  <div class="container">
+    <div class="title">Tính % date còn lại của sản phẩm</div>
 
-      <div class="date-input">
-        <div>
-          <p>NSX</p>
-          <input type="number" class="input-nsx" id="nsx-number" />
-          <select name="nsx" id="nsx-option">
-            <option value="day">Ngày</option>
-            <option value="week">Tuần</option>
-            <option value="month">Tháng</option>
-            <option value="year">Năm</option>
-          </select>
-        </div>
-        <div>
-          <p>HSD</p>
-          <input type="date" id="hsd" />
-        </div>
-        <div>
-          <p>Ngày kiểm tra date</p>
-          <input type="date" id="result" value="17/02/2022" />
-        </div>
+    <div class="date-input">
+      <div>
+        <p>NSX</p>
+        <input type="number" class="input-nsx" id="nsx-number" />
+        <select name="nsx" id="nsx-option">
+          <option value="day">Ngày</option>
+          <option value="week">Tuần</option>
+          <option value="month">Tháng</option>
+          <option value="year">Năm</option>
+        </select>
       </div>
-      <div class="date-output">
-        <button type="button" onclick="calDateNsx()" class="calculator-button">
-          Kết Quả
-        </button>
+      <div>
+        <p>HSD</p>
+        <input type="date" id="hsd" />
       </div>
-      <div class="show">
-        <p id="dayCount" value=""></p>
+      <div>
+        <p>Ngày kiểm tra date</p>
+        <input type="date" id="result" value="17/02/2022" />
       </div>
-      <p id="textFunny" value=""></p>
-    
+    </div>
+    <div class="date-output">
+      <button type="button" onclick="calDateNsx()" class="calculator-button">
+        Kết quả
+      </button>
+    </div>
+    <div class="show">
+      <p id="dayCount" value=""></p>
+    </div>
+    <p id="textFunny" value=""></p>
+
     <div class="menu">
       <a href="./findhsd.html">Đã biết NSX</a>
 
       <a href="./index.html">Về Trang Chủ</a>
     </div>
     <footer>
-      <h2>Buy Me Coffee</h2>
+      <!-- <h2>Buy Me Coffee</h2>
       <div class="donate">
         <img src="./qrmomo.jpg" alt="Donation" />
-      </div>
+      </div> -->
       <a href="https://phamvankhang.name.vn">
-        Phát triển bởi <span> Phạm Văn Khang</span></a
-      >
+        Phát triển & vận hành bởi <span> Phạm Văn Khang</span></a>
     </footer>
-    </div>
-  </body>  
-    <script src="./date.js"></script>
-  </body>
+  </div>
+</body>
+<script src="./date.js"></script>
+</body>
+
 </html>

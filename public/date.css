@@ -1,6 +1,12 @@
 body {
   font-family: "Times New Roman", Times, serif;
 }
+html {
+  height: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
 .container {
   padding-top: 10px;
   background-color: white;
@@ -54,6 +60,8 @@ body {
   color: #4700d8;
   font-size: 14px;
   border-color: #f2fa5a;
+  /* box-shadow: 2px 0 2px 0 #f2fa5a; */
+  border-radius: 4px;
 }
 .show {
   padding-top: 20px;
@@ -73,12 +81,13 @@ body {
   height: 150px !important;
   width: 150px !important;
 }
-/* footer {
-  left: 28%;
-  bottom: 15px;
-  position: absolute;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 14px;
-} */
+  padding-top: 10rem;
+}
 footer span {
   font-weight: 700;
 }
